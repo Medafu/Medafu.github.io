@@ -1,29 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 body {
+    font-family: Open Sans, sans-serif;
     background-color: #121212;
+    color: white;
+    padding: 20px;
+    margin: 0;
 }
 
-h1, h2, h3, p {
-    color: #EEEEEE;
-}
-
-h2, h1 {
-    width: 200px;
+h1 {
     text-align: center;
 }
 
-h3 {
-    text-align: center;
+.games img {
+    width: 300px;
+    height: 400px;
 }
 
-p {
+.music img {
+    max-width: 330px;
+    max-height: 330px;
+}
+
+.greeting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-shrink: 1;
+}
+
+.text {
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
-#games, #albums {
+.greeting .text {
+    max-width: 600px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
     background-color: #212121;
-    width: 95%;
+    margin: 20px 40px;
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 10px 0px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin: 20px 40px 40px;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 3px 20px;
+    font-size: 30px;
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+.button img {
+    width: 30px;
+    height: 30px;
+}
+
+.button.steam {
+    background-image: linear-gradient(#082359, #0d4380);
+}
+
+.button.lastfm {
+    background-image: linear-gradient(#7e021b, #970220);
 }
 
 a {
-    font-size: 25px;
+    color: white;
+    text-decoration: none;
 }
